@@ -20,6 +20,14 @@ public class MainActivity extends AppCompatActivity {
         View view  = binding.getRoot();
         setContentView(view);
 
+
+        binding.btnBarinak.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(MainActivity.this, barinaklar.class);
+                startActivity(i);
+            }
+        });
         binding.btnHasta.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View hasta) {
